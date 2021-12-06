@@ -8,14 +8,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
+    <script type="text/javascript">
+      function open() {
+        document.getElementById('profile-card').style.display = 'block'
+        document.getElementById('open').style.display = 'none'
+      }
+      function close() {
+        document.getElementById('profile-card').style.display = 'none'
+        document.getElementById('open').style.display = 'block'
+      }
+    </script>
   </head>
   <body>
-    <div class="profile-card">
+    <div id="profile-card" class="profile-card">
       <div class="top-section">
         <i class="message fas fa-envelope"></i>
-        <i class="notif fas fa-bell"></i>
+        <a href="javascript: close()"
+          ><i class="exit fas fa-window-close"></i
+        ></a>
         <div class="pic">
-          <img src="pic.png" alt="" />
+          <img src="pic.png" />
         </div>
         <div class="name">JasonH33</div>
         <div class="tag">@H33_Jason</div>
@@ -36,5 +48,8 @@
         <div class="views">0 <span>Views</span></div>
       </div>
     </div>
+    <a id="open" href="javascript: open()">
+      <i class="open fas fa-envelope-open"></i
+    ></a>
   </body>
 </html>

@@ -15,12 +15,23 @@ body {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+.open {
+  color: #ffffff;
+  display: block;
+  font-size: 100px;
+}
+
 .profile-card {
   width: 420px;
   overflow: hidden;
   text-align: center;
   position: relative;
   box-shadow: 0 0 10px #00000070;
+  display: none;
 }
 
 .top-section {
@@ -29,7 +40,7 @@ body {
 }
 
 .message,
-.notif {
+.exit {
   position: absolute;
   top: 40px;
   font-size: 20px;
@@ -41,7 +52,7 @@ body {
   right: 40px;
 }
 
-.notif {
+.exit {
   left: 40px;
 }
 
